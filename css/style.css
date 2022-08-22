@@ -14,7 +14,7 @@
 
 body {
   margin: 0 auto;
-  width: 1660px;
+  width: 100%;
   justify-content: center;
 }
 
@@ -22,6 +22,10 @@ body {
   background-color: #666666;
   box-sizing: border-box;
   position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .header__image {
@@ -47,13 +51,13 @@ body {
 }
 
 .menu {
+  width: 100%;
   display: flex; 
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   position: relative;
-  z-index: 3;
-  top: 30px;
-  margin-left: auto;
+  z-index: 3;  
+  margin-top: 30px;
 }
 
 .menu__logo {
@@ -69,7 +73,6 @@ body {
   padding: 0px;
   display: flex; 
   color: #ffffff;
-  margin-left: 500px;
   font-family: OpenSans-Regular;
   font-size: 13px;
   line-height: normal;
@@ -89,6 +92,10 @@ body {
   text-decoration:underline;
 }
 
+.burger__menu {
+  display: none;
+}
+
 h1 {
   position: relative;
   font-family: OpenSans-Bold;
@@ -100,6 +107,7 @@ h1 {
   z-index: 3;
   margin-top: 130px;
   padding-bottom: 150px;
+  width: 100%;
 }
 
 .title__link {
@@ -132,12 +140,14 @@ h1 {
 }
 
 .trends__list {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .trends__card {
   min-height: 320px;
-  width: 415px;
+  width: calc(25% - 4px);
   background-color: black;
   position: relative;
   padding: 0px;
@@ -183,10 +193,6 @@ h1 {
   background-image: url(../images/trend4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.trends__card:nth-child(n+1) {
-  margin-left: 10px;
 }
 
 .trends__text {
@@ -619,23 +625,23 @@ h1 {
 }
 
 .shop {
-  width: 1120px;
+  width: 1200px;
   margin: 0 auto;
 }
 
-.product__cards__image {
+.product__cards__list {
   display: flex;
   justify-content: space-between;
+}
+
+.product__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .product__card__image {
   object-fit: cover;
-}
-
-.products__article {
-  display: flex;
-  justify-content: space-between;
-
 }
 
 .product__article {
@@ -645,7 +651,6 @@ h1 {
   outline: 4px solid #b59f5b;
   outline-offset: 20px;
   margin-top: -10px; 
-  flex-direction: column;
 }
 
 .product__link {
@@ -769,6 +774,7 @@ h1 {
   background-color: #f4f7f6;
   margin-bottom: 74px;
   margin-top: 65px;
+  justify-content: center;
 }
 
 .social__icon__list {
@@ -785,7 +791,7 @@ h1 {
 }
 
 .social__icon__item:nth-child(n+2) {
-  margin-left: 30px;
+  padding-left: 30px;
 }
 
 .social__icon__link{
@@ -821,3 +827,214 @@ h1 {
   color: #999999;
   text-align: center;
 }
+
+
+@media (min-width:641px) and (max-width: 1199px) {
+  body {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .menu {
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  .menu__list {
+    display: none;
+  }
+
+  .burger__menu {
+    display: block;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .title__link {
+    font-size: 18px;
+  }
+
+  .trends__list {
+    flex-wrap: wrap;
+  }
+
+  .trends__card {
+    width: calc(50% - 1.5px); 
+    margin-top: 3px;    
+  }   
+  
+  .trends__card__link {
+    font-size: 17px;
+  }
+ 
+  .page {
+    width: 100%;
+  }
+
+  .main {
+    width: calc(100% - 270px);
+  }
+
+  .card {
+    flex-wrap: wrap;
+  }
+
+  .card__image {
+    margin-left: 30px;
+  }
+
+  .card__link {
+    font-size: 17px;
+  }
+
+  .aside {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .card__content::after {
+    content:"";
+    display: block;
+    width: 100%;
+    margin: 20px auto 0;
+    border-bottom: 4px solid #eeeeee
+  }
+
+  .shop {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .product__cards__list {
+    flex-wrap: wrap;
+  }
+
+  .product__card {
+    width: calc(50% - 100px);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  .product__link {
+    font-size: 17px;
+  }
+  
+  .product__article {
+    width: 100%;
+  }
+
+
+  .footer {
+    width: 100%;
+  } 
+
+}
+
+@media (max-width:640px)  {
+  .menu {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: end;
+  }
+  .menu__logo-link {
+    width: 100%;
+    margin-top: 30%;
+   }
+
+  .menu__logo {
+    width: 80%;
+    object-fit: cover;
+    margin-left: 10%;
+  }
+
+  .menu__list {
+    display: none;
+  }
+  .burger__menu {
+    display: block;
+    margin-right: 5%;
+    margin-top: 20px;
+  }
+  .h1 {
+    margin-top: 30px;
+  }
+  .trends__list {
+    flex-wrap: wrap;
+  }
+  .trends__card {
+    width: 100%; 
+    margin-top: 3px;    
+  }
+  .page {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main {
+    width: 100%;
+  }
+  .card {
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .card__image {
+    width: 100%;
+    object-fit: cover;
+  }
+  .card__article {
+    width: 100%;
+  }
+  .aside {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .news__article {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+   }
+  .form-group {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .form-button {
+    margin-top: 0px;
+  }
+  .aside__theme {
+    width: 100%;
+    margin: 0 auto;
+  }
+ 
+  .shop {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .product__cards__list {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .product__card {
+    margin-bottom: 10%;
+  }
+  .footer {
+    width: 100%;
+  }
+  
+
+}
+
+
+
