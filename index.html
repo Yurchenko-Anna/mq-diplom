@@ -9,7 +9,21 @@
 </head>
 <body>
   <header class="header">
-    <img src="images/banner-bg.jpg" alt="горы" class="header__image">
+    <picture class="header__image">
+      <source 
+        media="(min-width: 1200px)"
+        srcset="images/banner-bg.jpg">
+      <source
+        media="(min-width:641px) and (max-width: 1199px)"
+        srcset="images/banner-bg-tablet.jpg">
+      <source
+        media="(max-width: 640px)"
+        srcset="images/banner-mobile.jpg">
+      <img 
+        src="images/banner-bg.jpg" 
+        alt="горы">
+    </picture>
+    
     <nav class="menu">
        <a href="#" class="menu__logo-link">
          <img src="svg/noemi-logo.svg" class="menu__logo" alt="логотип">
@@ -41,9 +55,10 @@
            <path d="M56 48c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 48 54.798 48 56 48zM56 32c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 32 54.798 32 56 32zM56 16c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 16 54.798 16 56 16z"/>
          </svg>
        </button>
-     </nav>
+    </nav>
+
+    <h1 class="header-title">Блог о творчестве, спорте,<br>  и образе жизни</h1>     
      
-     <h1 class="header-title">Блог о творчестве, спорте,<br>  и образе жизни</h1>
   </header>
 
   <div>
@@ -119,7 +134,7 @@
     <main class="main">
       <div class="card">
         <div class="card__image">
-          <img src="images/last-post1.jpg" alt="море">
+          <img class="image-card__image" src="images/last-post1.jpg" alt="море">
         </div>
         <article class="card__article">
           <header class="card__header">
@@ -149,7 +164,7 @@
       
       <div class="card">
         <div class="card__image">
-          <img src="images/last-post2.jpg" alt="йога">
+          <img src="images/last-post2.jpg" alt="йога" class="image-card__image">
         </div>
         <article class="card__article">
           <header class="card__header">
@@ -179,7 +194,7 @@
       
       <div class="card">
         <div class="card__image">
-          <img src="images/last-post3.jpg" alt="музыка">
+          <img class="image-card__image" src="images/last-post3.jpg" alt="музыка">
         </div>
         <article class="card__article">
           <header class="card__header">
@@ -207,7 +222,7 @@
       
       <div class="card">
         <div class="card__image">
-          <img src="images/last-post4.jpg" alt="обед">
+          <img class="image-card__image" src="images/last-post4.jpg" alt="обед">
         </div>
         <article class="card__article">
           <header class="card__header">
@@ -237,7 +252,7 @@
    
       <div class="card">
         <div class="card__image">
-          <img src="images/last-post5.jpg" alt="подушка с модным принтом">
+          <img class="image-card__image" src="images/last-post5.jpg" alt="подушка с модным принтом">
         </div>
         <article class="card__article">
           <header class="card__header">
