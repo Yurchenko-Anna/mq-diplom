@@ -994,6 +994,10 @@ h1 {
     width: 100%;
     justify-content: center;
   }
+
+  .title-popup {
+    font-size: 18px;
+  }  
   
   .header-image img{
     width: 100%;
@@ -1113,6 +1117,26 @@ h1 {
     width: 100%;
     justify-content: center;
   }
+  .popup-content {
+    width: 330px;
+    height: 545px;
+  }
+   .title-popup {
+    font-size: 16px;
+  } 
+  .select {
+    width: 280px;   
+  } 
+  .popup-field {
+    width: 280px;
+  }  
+  textarea {
+    min-width: 280px;
+    max-width: 280px;
+  }  
+  .form-row-button {   
+    width: 280px; 
+  }  
   .header-image img{
     width: 100%;
     height: 100%;
@@ -1144,6 +1168,10 @@ h1 {
   }
   .h1 {
     margin-top: 30px;
+    font-size: 26px;
+  }
+  .title-link {
+    font-size: 16px;
   }
   .trends-list {
     flex-wrap: wrap;
@@ -1151,6 +1179,9 @@ h1 {
   .trends-card {
     width: 100%; 
     margin-top: 3px;    
+  }
+  .trends-card-link {
+    font-size: 16px;
   }
   .page {
     flex-wrap: wrap;
@@ -1181,6 +1212,12 @@ h1 {
     width: 100%;
     margin-left: 0px;
     margin-top: 5%;
+  }
+  .card-name {
+    font-size: 16px;
+  }
+  .card-content {
+    font-size: 14px;
   }
   .card::after {
     content:"";
@@ -1263,6 +1300,10 @@ h1 {
  
   .product-article {
     width: 80%;
+  }
+
+  .product-link {
+    font-size: 17px;
   }
   
   .footer {
