@@ -8,6 +8,41 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- visually-hidden -->
+  <div class="popup visually-hidden">
+    <div class="popup-content">
+      <label for="popup" class="popup-close">&times;</label>
+      <h2 class="title-popup">Ваш фидбек</h2>
+      <div class="form-row">
+        <span class="form-hint">Как часто вы заходите на сайт?</span>
+        <select class="select">
+          <option selected>Почти каждый день</option>
+          <option>Раз в несколько дней</option>
+          <option>Раз в несколько недель</option>
+          <option>Несколько раз в год</option>
+        </select>     
+      </div>
+      <div class="form-row">
+        <span class="form-hint">Вы подписаны на e-mail рассылку?</span>      
+        <div class="checkbox">
+          <label class="radio-group">
+            <input type="radio" class="radio" name="radio-group" checked>
+            <span class="radio-group-text">Да</span>
+          </label>
+          <label class="radio-group">
+            <input type="radio" class="radio" name="radio-group">
+            <span class="radio-group-text">Нет</span>
+          </label>
+        </div>
+      </div>
+      <div class="form-row">
+        <span class="form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+        <textarea class="popup-field" placeholder="Может, больше рецептов?"></textarea>
+      </div>
+      <button class="form-row-button">Отправить</button>
+    </div>
+  </div>
+
   <header class="header">
     <picture class="header-image">
       <source 
@@ -131,6 +166,8 @@
       </div>
     </div>
   </div>
+
+  
 
   <div class="page">
     <main class="main">
