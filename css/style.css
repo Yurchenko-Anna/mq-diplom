@@ -1120,8 +1120,9 @@ h1 {
   .popup-content {
     width: 330px;
     height: 545px;
+    padding-top: 10px;
   }
-   .title-popup {
+  .title-popup {
     font-size: 16px;
   } 
   .select {
@@ -1129,6 +1130,7 @@ h1 {
   } 
   .popup-field {
     width: 280px;
+    margin-bottom: 20px;
   }  
   textarea {
     min-width: 280px;
@@ -1310,7 +1312,6 @@ h1 {
     width: 100%;
   }
   
-
 }
 
 
