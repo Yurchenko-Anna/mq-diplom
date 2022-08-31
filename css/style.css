@@ -455,6 +455,7 @@ h1 {
 .main {
   width: 780px;
   margin-left: 15px;
+  padding-right: 15px;
 }
 
 .card {
